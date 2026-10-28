@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyFlow — organize seus estudos e domine cada matéria</title>
+  <meta name="description" content="Kanban, cronograma, Pomodoro e revisão espaçada em um só lugar.">
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="StudyFlow">
+    <span class="mark"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+    <span>Study<b>Flow</b></span>
+  </a>
+  <nav class="links" id="links">
+    <a href="#metodos">Métodos <i class="chev"></i></a>
+    <a href="#recursos">Recursos</a>
+    <a href="#estudantes">Para quem</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#sobre">Sobre <i class="chev"></i></a>
+  </nav>
+  <div class="nav-cta">
+    <a class="signin" href="index.html">Entrar</a>
+    <a class="btn btn-blue btn-sm" href="index.html">Começar grátis</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <a class="badge" href="#metodos"><i class="ring"></i> Integra Pomodoro, Kanban e revisão espaçada</a>
+    <h1>
+      Planeje estudos
+      <span class="pill"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      memorize
+      <span class="pill"><svg viewBox="0 0 24 24"><path d="M17 7 7 17M16 17H7V8"/></svg></span>
+      e acompanhe seu progresso
+      <span class="pill chart"><svg viewBox="0 0 24 24"><path d="M6 20v-6M12 20V6M18 20v-10"/></svg></span>
+    </h1>
+    <p class="lead">O StudyFlow ajuda estudantes a organizar tarefas, montar o cronograma da semana e fixar o conteúdo, tudo num só lugar.</p>
+
+    <form class="cta-form" id="ctaForm">
+      <input type="email" id="email" placeholder="Seu melhor e-mail" aria-label="E-mail" required>
+      <button class="btn btn-blue" type="submit">Começar grátis</button>
+    </form>
+
+    <p class="trust">Combina as técnicas mais usadas por quem estuda para valer</p>
+    <div class="wordmarks" aria-label="Métodos suportados">
+      <span class="wm w1">Pomodoro</span>
+      <span class="wm w2"><i></i>Kanban</span>
+      <span class="wm w3">cornell</span>
+      <span class="wm w4">Feynman</span>
+      <span class="wm w5">SQ3R<em>★</em></span>
+    </div>
+  </section>
+
+  <!-- VITRINE -->
+  <section class="stage reveal" aria-label="Prévia do sistema">
+    <div class="lines" aria-hidden="true"></div>
+
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="phone-in">
+        <div class="ph-head"><span class="dot ok"></span><b>Cálculo II</b><span class="x">✕</span></div>
+        <div class="seg"><span class="on">Detalhes</span><span>Atividade</span></div>
+        <div class="ph-status"><span class="check">✓</span><div><b>Concluído</b><small>Integrais por partes · 24/10</small></div></div>
+        <div class="ph-box">
+          <div class="row"><small>Matéria</small><em class="tag t1">Matemática</em></div>
+          <div class="row"><small>Prazo</small><span>30/10</span></div>
+          <div class="row"><small>Método</small><span class="m">🍅 Pomodoro</span></div>
+          <div class="row"><small>Foco</small><span>3/4 ciclos</span></div>
+          <div class="bar"><i style="width:75%"></i></div>
+        </div>
+        <ul class="ph-check"><li class="d">Ler capítulo 7</li><li class="d">Resolver 10 questões</li><li>Revisar erros</li></ul>
+      </div>
+    </div>
+
+    <div class="app">
+      <aside>
+        <div class="a-dot"></div>
+        <span class="act"><i></i>Hoje</span><span><i></i>Quadro</span><span><i></i>Cronograma</span><span><i></i>Pomodoro</span><span><i></i>Revisão</span><span class="sp"><i></i>Ajustes</span>
+      </aside>
+      <div class="a-main">
+        <div class="a-top"><h4>Hoje</h4><small>terça, 27 de outubro</small></div>
+        <div class="a-tabs"><small class="on">Para fazer</small><small>Agendado</small><small>Concluído</small></div>
+        <div class="a-sec">Manhã</div>
+        <div class="a-row"><span class="av a1">F</span><div><b>Física · Lista cap. 5</b><small>08:00 – 09:30</small></div><em>🐸</em></div>
+        <div class="a-row"><span class="av a2">P</span><div><b>Programação · API REST</b><small>10:00 – 11:00</small></div><em>🍅 2</em></div>
+        <div class="a-sec">Tarde</div>
+        <div class="a-row sel"><span class="av a3">M</span><div><b>Matemática · Revisão espaçada</b><small>14:00 – 14:30</small></div><em>🔁</em></div>
+        <div class="a-row"><span class="av a4">I</span><div><b>Inglês · Phrasal verbs</b><small>16:00 – 16:30</small></div><em>🧠</em></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NÚMEROS -->
+  <section class="numbers reveal">
+    <div><b data-count="12">0</b><span>metodologias de estudo</span></div>
+    <div><b data-count="7">0</b><span>ferramentas em um só lugar</span></div>
+    <div><b data-count="64" data-suffix=" d">0</b><span>de intervalo na revisão espaçada</span></div>
+    <div><b data-count="100" data-suffix="%">0</b><span>gratuito e sem anúncios</span></div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section class="features" id="recursos">
+    <div class="sec-head reveal">
+      <small class="eyebrow">Recursos</small>
+      <h2>Tudo o que sua rotina de estudos precisa</h2>
+      <p>Menos tempo organizando, mais tempo aprendendo.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card c-wide reveal">
+        <div class="txt"><h3>Quadro Kanban</h3><p>Arraste cartões entre listas, com matéria, prioridade, prazo e checklist em cada um.</p></div>
+        <div class="mini kanban">
+          <div><small>A fazer</small><span>Cálculo II</span><span>Clean Arch.</span></div>
+          <div><small>Fazendo</small><span class="hl">API REST</span></div>
+          <div><small>Feito</small><span class="ok">Álgebra</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="txt"><h3>Cronograma semanal</h3><p>Reserve horários fixos e deixe o sistema planejar a semana por você.</p></div>
+        <div class="mini week"><i></i><i class="b2"></i><i></i><i class="b3"></i><i class="b1"></i><i></i><i class="b2"></i></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="txt"><h3>Pomodoro integrado</h3><p>Ciclos de foco ligados aos seus cartões, com estatísticas por matéria.</p></div>
+        <div class="mini timer"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="48"/><circle class="p" cx="60" cy="60" r="48"/></svg><b>18:42</b></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="txt"><h3>Revisão espaçada</h3><p>Revise logo antes de esquecer: 1, 2, 4, 8, 16 dias e além.</p></div>
+        <div class="mini srs"><span>1d</span><span>2d</span><span>4d</span><span>8d</span><span class="on">16d</span><span>32d</span></div>
+      </article>
+
+      <article class="card reveal">
+        <div class="txt"><h3>Matriz de Eisenhower</h3><p>Separe o que é urgente do que é importante e foque no que realmente move a nota.</p></div>
+        <div class="mini matrix"><span class="q1">Fazer agora</span><span class="q2">Agendar</span><span class="q3">Resolver rápido</span><span class="q4">Depois</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- MÉTODOS -->
+  <section class="methods reveal" id="metodos">
+    <div class="sec-head">
+      <small class="eyebrow">Metodologias</small>
+      <h2>Use a técnica certa para cada momento</h2>
+    </div>
+    <div class="chips" id="chips">
+      <span>Pomodoro</span><span>Kanban</span><span>Time blocking</span><span>Eisenhower</span><span>Repetição espaçada</span><span>Active recall</span>
+      <span>Feynman</span><span>Cornell</span><span>SQ3R</span><span>Ivy Lee</span><span>Eat the Frog</span><span>GTD</span>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section class="who" id="estudantes">
+    <div class="who-card reveal">
+      <h2>Feito para quem estuda de verdade</h2>
+      <ul>
+        <li><b>Vestibular e ENEM</b><span>Organize matérias, simulados e revisões até a prova.</span></li>
+        <li><b>Faculdade</b><span>Prazos, trabalhos e provas num único quadro.</span></li>
+        <li><b>Concursos</b><span>Edital quebrado em tópicos com revisão programada.</span></li>
+        <li><b>Autodidatas</b><span>Aprenda programação, idiomas ou qualquer habilidade.</span></li>
+      </ul>
+      <a class="btn btn-blue" href="index.html">Criar meu plano de estudos</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq reveal" id="faq">
+    <div class="sec-head"><small class="eyebrow">Dúvidas</small><h2>Perguntas frequentes</h2></div>
+    <details open><summary>Preciso criar conta?</summary><p>Não. Seus dados ficam salvos no próprio navegador e você pode exportar um backup quando quiser.</p></details>
+    <details><summary>Funciona no celular?</summary><p>Sim, o layout se adapta a telas pequenas e funciona em qualquer navegador moderno.</p></details>
+    <details><summary>Posso usar mais de um método ao mesmo tempo?</summary><p>Pode e deve. Um bom plano combina cronograma, Pomodoro e revisão espaçada.</p></details>
+    <details><summary>Como o planejamento automático funciona?</summary><p>Ele distribui seus cartões pendentes nos horários livres dos próximos 7 dias, respeitando prazo e prioridade.</p></details>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final reveal" id="sobre">
+    <h2>Pronto para estudar com método?</h2>
+    <p>Comece agora, sem cadastro e sem cartão.</p>
+    <a class="btn btn-white" href="index.html">Abrir o StudyFlow</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="f-brand"><span class="mark"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><b>StudyFlow</b><p>Organização e método para quem estuda.</p></div>
+    <div><h5>Produto</h5><a href="index.html">Quadro</a><a href="index.html">Cronograma</a><a href="index.html">Pomodoro</a><a href="index.html">Revisão</a></div>
+    <div><h5>Métodos</h5><a href="#metodos">Kanban</a><a href="#metodos">Feynman</a><a href="#metodos">Cornell</a><a href="#metodos">Eisenhower</a></div>
+    <div><h5>Projeto</h5><a href="#sobre">Sobre</a><a href="#faq">Dúvidas</a><a href="https://github.com/Geovannehh" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+  <div class="copy">© 2026 StudyFlow · Feito por Geovane Paixão</div>
+</footer>
+
+<script src="landing.js"></script>
+</body>
+</html>

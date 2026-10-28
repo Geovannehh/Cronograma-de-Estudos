@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyFlow — organize seus estudos</title>
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">⚡</span><span class="brand-name">Study<b>Flow</b></span></div>
+      <nav id="nav"></nav>
+      <div id="miniTimer" class="mini-timer" hidden></div>
+      <div class="side-foot">
+        <button class="ghost" data-act="export">⬇ Exportar</button>
+        <button class="ghost" data-act="import">⬆ Importar</button>
+        <input type="file" id="importFile" accept="application/json" hidden>
+      </div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <div class="board-picker" id="boardPicker"></div>
+        <div class="grow"></div>
+        <input id="search" class="search" type="search" placeholder="Buscar cartões ( / )" autocomplete="off">
+        <button class="primary" data-act="quick-add">＋ Cartão</button>
+      </header>
+      <main id="view" class="view"></main>
+    </div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="store.js"></script>
+  <script src="methods.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
